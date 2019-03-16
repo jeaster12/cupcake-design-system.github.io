@@ -100,10 +100,7 @@ defaults:
 collections:
   elements:
     output: true
-    permalink: /elements/:path/
   patterns:
     output: true
-    permalink: /patterns/:path/ 
   getting-started:
     output: true
-    permalink: /getting-started/:path/
