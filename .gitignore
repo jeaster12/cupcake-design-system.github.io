@@ -62,3 +62,4 @@ typings/
 
 .sass-cache/
 dist/
+assets/img/guide/.DS_Store

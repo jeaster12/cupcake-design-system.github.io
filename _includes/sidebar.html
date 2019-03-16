@@ -21,7 +21,7 @@
           {% assign items = cat.items | sort: 'weight' %}
           {% for item in items %}
           <li class="c-sidenav-menu-item {% if item.url == page.url %}c-sidenav-menu-item-active{% endif %}">
-            <a class="c-sidenav-menu-link" href="{{ item.url }}">
+            <a class="c-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">
               {{ item.title }}
             </a>
           </li>
