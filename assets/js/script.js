@@ -52,38 +52,10 @@ $('[href=""]').click(function (e) {
 
 
 /************************************************
-* Flavor Dropdown
-*************************************************/  
-
-var $html = $('html');
-
-$html.on('click.ui.dropdown', '.docs-flavor-switch', function(e) {
-  e.preventDefault();
-  $(this).toggleClass('is-open');
-});
-
-$html.on('click.ui.dropdown', '.docs-flavor-switch [data-dropdown-value]', function(e) {
-  e.preventDefault();
-  var $item = $(this);
-  var $dropdown = $item.parents('.docs-flavor-switch');
-  $dropdown.find('.docs-flavor-switch-input').val($item.data('dropdown-value'));
-  $dropdown.find('.docs-flavor-switch-current').text($item.text());
-});
-
-$html.on('click.ui.dropdown', function(e) {
-  var $target = $(e.target);
-  if (!$target.parents().hasClass('docs-flavor-switch')) {
-    $('.docs-flavor-switch').removeClass('is-open');
-  }
-});
-
-
-/************************************************
 * Docs Highlight
 *************************************************/  
 
-
-$html.on('click.ui.btn', '#highlight-toggle', function(e) {
+$('html').on('click.ui.btn', '#highlight-toggle', function(e) {
   e.preventDefault();
   $(this).find(".fa-caret-down, .fa-caret-up").toggleClass("fa-caret-down fa-caret-up");
   // $(this).parents(".window-bar").nextAll(".highlight:first").toggleClass("show-me");
@@ -150,90 +122,6 @@ $('.docs-content > h2, .docs-content > h3, .docs-content > h4, .docs-content > h
 
 
 
-/************************************************
-* Flavor Switch
-*************************************************/  
-// Local storage settings
-var themeSettings = getThemeSettings();
-
-// Elements
-var $app = $('#docs-app');
-var $styleLink = $('#theme-style');
-var $customizeMenu = $('#customize-menu');
-
-
-// Color switcher
-var $customizeMenuDropdown = $customizeMenu.find('.flavor');
-  
-
-// Initial State
-setThemeSettings();
-  
-
-// Set theme type
-$customizeMenuDropdown.on('click', function () {
-  themeSettings.themeName = $(this).data('theme');
-  setThemeSettings();
-});
-
-function setThemeSettings() {
-  setThemeState()
-    .delay(50)
-    .queue(function (next) {
-
-      setThemeControlsState();
-      saveThemeSettings();
-
-      $(document).trigger("themechange");
-
-    next();
-  });
-}
-  
-
-
-// Update theme based on options
-function setThemeState() {
-  // set theme type
-  if (themeSettings.themeName) {
-    $styleLink.attr('href', '../../../assets/cupcake/' + themeSettings.themeName + '.css');
-  } else {
-    $styleLink.attr('href', '../../../assets/cupcake/default.css');
-  }
-
-  return $app;
-}
-  
-
-
-// Update theme controls based on options
-function setThemeControlsState() {
-  // set color switcher
-  $customizeMenuDropdown.each(function () {
-    if ($(this).data('theme') === themeSettings.themeName) {
-      $(this).addClass('active');
-    } else {
-      $(this).removeClass('active');
-    }
-  });
-}
-  
-
-
-// Storage Functions
-function getThemeSettings() {
-  var settings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
-
-  return settings;
-}
-
-function saveThemeSettings() {
-  localStorage.setItem('themeSettings', JSON.stringify(themeSettings));
-}
-
-}(jQuery));
-
-
 
 
 /************************************************
@@ -248,40 +136,10 @@ clipboard.on('success', function (e) {
   })
 
 
-
-$(document).ready(function () {
-
-  // sidebar nav elements
-  var $sidebarNavContainer = $("body")
-  var $sidebarNavBody = $(".c-sidenav-body");
-  var $sidebarNavListToggle = $(".c-sidenav-menu-link");
-  var $sidebarNavLinkName = $(".c-sidenav-menu");
-  var $sidebarId = $("#js-nav");
-  var $sidebarNavChildList = ".c-sidenav-menu-submenu";
-  var $sidebarNavToggle = $(".c-sidenav-toggle, .c-sidenav-collapse");
-
-  // sub menu toggle
-  $($sidebarId).find($sidebarNavListToggle).on("click", function () {
-    $(this).siblings($sidebarNavChildList).slideToggle(200);
-    $(this).parent().toggleClass("c-sidenav-menu-item-active");
-  })
-  
-
   $('#docs-menu-toggle').on('click', function(e) {
     e.preventDefault();
-    $($sidebarNavBody).slideToggle(200);
+    $('.c-sidenav-body').slideToggle(200);
   });
-  
-  // point carets right or down when active
-  // $sidebarNavListToggle.on("click", function () {
-  //   $(this).find(".fa-caret-right, .fa-caret-down").toggleClass("fa-caret-right fa-caret-down");
-  // })
 
-  // open/close toggle
-  $sidebarNavToggle.on("click", function () {
-    $(this).find(".fa").toggleClass("fa-angle-left fa-angle-right");
-    $sidebarNavContainer.toggleClass("c-sidenav-folded");
-  })
-})
-
+}(jQuery));
 
