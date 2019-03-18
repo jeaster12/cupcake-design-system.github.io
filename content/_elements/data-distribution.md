@@ -18,16 +18,16 @@ colors:
 
 <div class="c-row">
   <div class="c-col-12 c-col-lg-3">
-    {% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
+    {% include guide-img-jpg.html img='elements/dataviz/Column-Histogram'%}
   </div>
   <div class="c-col-12 c-col-lg-3">
-    {% include guide-img-jpg.html img='dataviz/Line-Histogram'%}
+    {% include guide-img-jpg.html img='elements/dataviz/Line-Histogram'%}
   </div>
   <div class="c-col-12 c-col-lg-3">
-    {% include guide-img-jpg.html img='dataviz/Heatmap-Chart'%}
+    {% include guide-img-jpg.html img='elements/dataviz/Heatmap-Chart'%}
   </div>
   <div class="c-col-12 c-col-lg-3">
-    {% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
+    {% include guide-img-jpg.html img='elements/dataviz/Scatter-Chart'%}
   </div>
 </div>
 

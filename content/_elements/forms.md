@@ -11,7 +11,27 @@ sizes:
 - sm
 - lg
 - xl
+tabs:
+- Design
+- Code 
 ---
+
+<div id="design" class="docs-tabs-content" markdown="1">
+
+## UX Guidance
+
+### Language
+
+{% include guide-img.html img='elements/forms/language'%}
+
+
+### Visual
+
+{% include guide-img.html img='elements/forms/visual'%}
+
+</div>
+
+<div id="code" class="docs-tabs-content" markdown="1">
 
 ## Form Input
 
@@ -310,13 +330,5 @@ Some basic styling for file upload areas.
 {% endexample %}
 
 ---
-## UX Guidance
 
-### Language
-
-{% include guide-img.html img='forms/language'%}
-
-
-### Visual
-
-{% include guide-img.html img='forms/visual'%}
+</div>

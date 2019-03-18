@@ -22,10 +22,10 @@ tabs:
 ### UX Guidance Yo! I'm in _Elements
 
 ##### Icon-Only Button Usage
-{% include guide-img.html img='buttons/icon-only-button-usage'%} 
+{% include guide-img.html img='elements/buttons/icon-only-button-usage'%} 
 
 ##### Icon-Only Button Usage in Forms
-{% include guide-img.html img='buttons/icon-only-button-usage-forms'%} 
+{% include guide-img.html img='elements/buttons/icon-only-button-usage-forms'%} 
 
 
 <hr>
@@ -33,10 +33,10 @@ tabs:
 # Style Guide/Usage
 
 ##### Button Wording
-{% include guide-img.html img='buttons/button-wording-dos-donts'%} 
+{% include guide-img.html img='elements/buttons/button-wording-dos-donts'%} 
 
 ##### Buttons + Icons
-{% include guide-img.html img='buttons/buttons-icons-dos-donts'%}
+{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
 
 </div>
 

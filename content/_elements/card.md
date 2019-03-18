@@ -6,7 +6,13 @@ colors:
 - success
 - warning
 - danger
+tabs:
+- Design
+- Code 
+- Angular
 ---
+
+<div id="code" class="docs-tabs-content" markdown="1">
 
 ## Intro
 Cards are used to group similar concepts and tasks together to make the software easier for users to scan, read, and get things done.
@@ -116,14 +122,15 @@ This is an example of available colors for the **{{ page.title }}** element.
 </div>
 {% endfor %}
 {% endexample %}
+</div>
 
 
-
+<div id="design" class="docs-tabs-content" markdown="1">
 ## UX Guidance
 
 ### Structure
 
-{% include guide-img.html img='card/card-structure'%}
+{% include guide-img.html img='elements/card/card-structure'%}
 
 Dashboard cards generally conform to the following criteria:
 
@@ -135,11 +142,13 @@ Dashboard cards generally conform to the following criteria:
 
 
 ### Titles
-{% include guide-img.html img='card/card-dont'%}
+{% include guide-img.html img='elements/card/card-dont'%}
 
 ### Size
-{% include guide-img.html img='card/card-size'%}
+{% include guide-img.html img='elements/card/card-size'%}
 
 
 ### Content
-{% include guide-img.html img='card/card-content'%}
+{% include guide-img.html img='elements/card/card-content'%}
+
+</div>

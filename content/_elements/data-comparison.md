@@ -19,27 +19,27 @@ Comparison graphs would be used to answer these questions:
 
   <div class="c-row">
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Bar-Chart'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Bar-Chart'%}
     </div>
 
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Radial-Bar-Chart'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Radial-Bar-Chart'%}
     </div>
 
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Column-Chart'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Column-Chart'%}
     </div>
 
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Line-Chart'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Line-Chart'%}
     </div>
 
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Column-Histogram'%}
     </div>
 
     <div class="c-col-12 c-col-lg-2">
-      {% include guide-img-jpg.html img='dataviz/Choropleth-Map'%}
+      {% include guide-img-jpg.html img='elements/dataviz/Choropleth-Map'%}
     </div>
   </div>
 

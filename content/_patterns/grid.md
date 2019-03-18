@@ -1,7 +1,6 @@
 ---
 title: Grid system
 description: Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system and dozens of predefined classes.
-category: patterns 2
 ---
 
 ## How it works

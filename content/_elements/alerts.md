@@ -9,7 +9,6 @@ colors:
 tabs: 
 - Design
 - Code
-tab-class: fullwidth
 ---
 
 
@@ -40,7 +39,7 @@ Banner alerts can be persistent or dismissible, depending of the nature of the m
 
 Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for their activation) is still valid.
 
-{% include guide-img.html img='alert/alert-top'%}
+{% include guide-img.html img='elements/alert/alert-top'%}
 
 **What banner alerts must communicate:**
 - Offline status
@@ -60,7 +59,7 @@ This alert can be either persistent (if condition it represents is still valid) 
 
 Page status alerts appear in an embedded position between the page header and the page content. Since this alert inserts itself into the page it pushes the content down the page and only removes itself once dismissed (if dismissable).
 
-{% include guide-img.html img='alert/alert-status'%}
+{% include guide-img.html img='elements/alert/alert-status'%}
 
 **What Page status alerts must communicate:**
 - Page update status
@@ -80,7 +79,7 @@ Toast alerts slide in from the top right corner of the browser, overlaying the c
 
 The toast alert can then either be dismissed or will disappear when its time duration has ended.
 
-{% include guide-img.html img='alert/alert-toast'%}
+{% include guide-img.html img='elements/alert/alert-toast'%}
 
 **What toast alerts must communicate:**
 - Errors - when a user completes an action but system-related issues prevent that action from being executed
