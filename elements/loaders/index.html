@@ -130,20 +130,8 @@
           </li>
           
           <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/avatar/">
-              Avatar
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/badges/">
-              Badges
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/button-group/">
-              Button Group
+            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/alerts/">
+              Alerts
             </a>
           </li>
           
@@ -160,18 +148,6 @@
           </li>
           
           <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/checkboxes-radios/">
-              Checkbox & Radios
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/dropdown/">
-              Dropdown
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
             <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/forms/">
               Forms
             </a>
@@ -184,56 +160,8 @@
           </li>
           
           <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/media-object/">
-              Media Object
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/modals/">
-              Modal
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/pagination/">
-              Pagination
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/progress/">
-              Progress
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
             <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/switches/">
               Switches
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/table/">
-              Tables
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/tabs/">
-              Tabs
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/alerts/">
-              Alerts
-            </a>
-          </li>
-          
-          <li class="c-sidenav-menu-item ">
-            <a class="c-sidenav-menu-link" href="https://jeaster12.github.io/cupcake-docs/elements/tooltips-popovers/">
-              Tooltips and Popovers
             </a>
           </li>
           
@@ -333,54 +261,82 @@
 
       
       
+        <ul class="docs-tabs ">
+    
+    <li><a data-tab="#design">Design</a></li>
+    
+    <li><a data-tab="#code">Code</a></li>
+    
+</ul>
+      
       
       <div class="main-demo-content">
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h2 id="application-loader">Application loader</h2>
+            <div id="design" class="docs-tabs-content">
 
-<p>The application loader is only used on initial application load ie. when a user signs into their account or a page is shared with an external party.</p>
+  <h2 id="application-loader">Application loader</h2>
 
-<div class="docs-example">
+  <p>The application loader is only used on initial application load ie. when a user signs into their account or a page is shared with an external party.</p>
+
+  <p><strong>Do’s and Dont’s</strong></p>
+
+  <p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/elements/loaders/logo.png" /></p>
+
+  <hr />
+
+  <h2 id="content-loader">Content Loader</h2>
+
+  <p>The page content loader is used when loading all content within the content area of a page, usually when navigating within the same application.</p>
+
+  <p><strong>Do’s and Dont’s</strong></p>
+
+  <p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/elements/loaders/page.png" /></p>
+
+  <hr />
+
+  <h2 id="skeleton-loaders">Skeleton Loaders</h2>
+
+  <p>The basic skeleton loader is used to represent any smaller piece of text based data. When the data or container shape differs dramatically in visual appearance from the basic skeleton loader, a custom skeleton loader will be a better idea.</p>
+
+  <p><strong>Do’s and Dont’s</strong></p>
+
+  <p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/elements/loaders/skeleton.png" /></p>
+
+</div>
+
+<div id="code" class="docs-tabs-content">
+
+  <h2 id="application-loader-1">Application loader</h2>
+
+  <div class="docs-example">
 <div class="c-card">
   <div class="c-card-content c-m-top-lg c-m-bottom-lg c-full-page-loader-logo">
   </div>
 </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content c-m-top-lg c-m-bottom-lg c-full-page-loader-logo"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<p><strong>Do’s and Dont’s</strong></p>
+  <hr />
 
-<p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/guide/loaders/logo.png" /></p>
+  <h2 id="content-loader-1">Content Loader</h2>
 
-<hr />
-
-<h2 id="content-loader">Content Loader</h2>
-
-<p>The page content loader is used when loading all content within the content area of a page, usually when navigating within the same application.</p>
-
-<div class="docs-example">
+  <div class="docs-example">
 <div class="c-full-page-loader"></div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-full-page-loader"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-full-page-loader"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<p><strong>Do’s and Dont’s</strong></p>
+  <hr />
 
-<p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/guide/loaders/page.png" /></p>
+  <h2 id="skeleton-loaders-1">Skeleton Loaders</h2>
 
-<hr />
-
-<h2 id="skeleton-loaders">Skeleton Loaders</h2>
-
-<p>The basic skeleton loader is used to represent any smaller piece of text based data. When the data or container shape differs dramatically in visual appearance from the basic skeleton loader, a custom skeleton loader will be a better idea.</p>
-
-<div class="docs-example">
+  <div class="docs-example">
 <div class="c-card">
     <div class="c-card-content">
       <div class="c-skeleton-loading"></div>
@@ -389,19 +345,16 @@
     </div>
   </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-skeleton-loading"</span><span class="nt">&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"c-hr"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-skeleton-loading"</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<p><strong>Do’s and Dont’s</strong></p>
-
-<p><img src="https://jeaster12.github.io/cupcake-docs/assets/img/guide/loaders/skeleton.png" /></p>
-
+</div>
 
 
           </div>
