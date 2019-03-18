@@ -60,9 +60,7 @@
   + p {
     margin-top: 2rem;
   }
-}
 
-.docs-example {
   .c-btn-group,
   .c-card {
     margin: .5rem;
@@ -71,7 +69,6 @@
     margin-bottom: 1rem;
   }
 }
-
 
 .docs-example-border-utils {
   [class^="c-bd"] {
@@ -101,3 +98,12 @@
     box-shadow: none;
 }
 
+.docs-clipboard {
+  position: absolute;
+  left: 70px;
+  padding: 3px 0;
+
+  + .highlight {
+    margin-top: 0;
+  }
+}

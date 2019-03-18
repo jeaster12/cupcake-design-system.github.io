@@ -1,6 +1,6 @@
 $font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $color-primary: #1c7cd6;
-$color-bg: #202932;
+$color-bg: $dark;
 $color-copy: #889bb0;
 $color-title: #fff;
 $container__width: 1080px;
@@ -81,7 +81,6 @@ body {
 }
 
 @media (min-width: 641px) {
-
 	.docs-landing {
 		display: flex;
 		text-align: left;
@@ -127,7 +126,6 @@ body {
 }
 
 @media (min-width: 1025px) {
-
 	.docs-landing-copy {
 		padding-right: 92px;
 		min-width: 620px;
